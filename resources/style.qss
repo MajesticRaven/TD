@@ -1,0 +1,95 @@
+QStackedWidget {
+    border-image: url(resources/images/backMenu.jpg);
+}
+
+QMessageBox {
+    background: #B0C4DE;
+    color: #E6E6FA;
+}
+
+QTextBrowser {
+    background: rgba(255, 255, 255, 0);
+    border: rgba(255, 255, 255, 0);
+    color: #E6E6FA;
+    text-align: center;
+    font: 18pt "Algerian";
+}
+
+QListWidget {
+    background: rgba(255, 255, 255, 0);
+    border: rgba(255, 255, 255, 0);
+    color: #E6E6FA;
+    text-align: center;
+    font: 18pt "Algerian";
+}
+
+QPushButton {
+    border-radius: 12px;
+    background: #696969;
+    color: #E6E6FA;
+    font: bold large "Lucidatypewriter";
+    font-size: 14px;
+    min-width: 80px;
+    min-height: 40px;
+}
+
+QPushButton#firstlevel, QPushButton#secondlevel, QPushButton#thirdlevel, QPushButton#fourthlevel, QPushButton#fifthlevel, QPushButton#sixlevel, QPushButton#sevenlevel, QPushButton#eightlevel, QPushButton#ninelevel, QPushButton#tenlevel, QPushButton#elevenlevel, QPushButton#twelvelevel {
+    background: #696969;
+    color: #f5f5dc;
+    border-radius: 12px;
+    min-width: 80px;
+    min-height: 80px;
+    font: bold large "Lucidatypewriter";
+}
+
+QPushButton#chooseButton {
+    min-width: 100px;
+    min-height: 40px;
+}
+
+QPushButton#createButton {
+    min-width: 140px;
+    min-height: 40px;
+}
+
+
+QPushButton#cancelButton {
+    min-width: 120px;
+    min-height: 40px;
+}
+
+QPushButton#storyButton {
+    min-width: 120px;
+    min-height: 40px;
+}
+
+QPushButton#infinityButton {
+    min-width: 130px;
+    min-height: 40px;
+}
+
+QPushButton#aboutButton {
+    min-width: 90px;
+    min-height: 40px;
+}
+
+QPushButton#newButton {
+    min-width: 140px;
+    min-height: 40px;
+}
+
+QPushButton#recordButton {
+    min-width: 90px;
+    min-height: 40px;
+}
+
+
+QPushButton#firstlevel:disabled, QPushButton#secondlevel:disabled, QPushButton#thirdlevel:disabled, QPushButton#fourthlevel:disabled, QPushButton#fifthlevel:disabled, QPushButton#sixlevel:disabled, QPushButton#sevenlevel:disabled, QPushButton#eightlevel:disabled, QPushButton#ninelevel:disabled, QPushButton#tenlevel:disabled, QPushButton#elevenlevel:disabled, QPushButton#twelvelevel:disabled {
+    border-image: url(resources/images/locked.png);
+    color: rgb(0, 0, 0, 0);
+}
+
+QLabel#aboutText {
+    color: white;
+    font-size: 16px;
+}

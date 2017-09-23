@@ -1,0 +1,6 @@
+Your goal: To protect the castle from monsters.
+Your remedies: You have the ability to build 4 types of towers. When you press the left mouse button - will be built one type of towers, provided that there is enough money. When you right-click a mouse, the second type will be built.
+You have the opportunity to improve the tower to 10 level with the left mouse button (you need to click on the tower). Each improvement costs (tower level * 10) and adds 10 damage per level.
+Your castle has 10 health. If you do not cope with the protection and the monsters broke through to the castle, then you have a chance to win if there are 10 or less monsters for the entire level.
+In the game there are 10 levels, 4 types of towers, 21 type of monsters.
+Good luck!

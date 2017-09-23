@@ -1,0 +1,1 @@
+you must copy the folder "Resources" to your release folder!
