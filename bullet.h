@@ -16,11 +16,6 @@ class bullet: public QObject, public QGraphicsPixmapItem, public bulletBase {
 public:
     bullet(QGraphicsItem* targ, int dmg);
 
-    double getMaxRange();
-    double getDistanceTravelled();
-    void setMaxRange(double range);
-    void setDistanceTravelled(double distance);
-
 public slots:
     void move();
 };
