@@ -752,7 +752,7 @@ void MainMenu::fifthlevel() {
     for(int i = 0; i < 11; i++ ) {
         delay(2000);
         Hydralisk* unit1 = new Hydralisk(5);
-        unit1->setPos(0, 280);
+        unit1->setPos(0, 240);
         scene->addItem(unit1);
     }
 
