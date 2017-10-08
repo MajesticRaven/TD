@@ -124,6 +124,14 @@ void tiTower::mousePressEvent(QGraphicsSceneMouseEvent *event) {
             textItem->setPlainText(QString::number(coins));
             levelTower++;
         }
+
+        backHp = scene()->addPixmap(QPixmap("resources/images/starLvl.png"));
+        backHp->setPos(x(), y());
+
+        showHp = scene()->addText(QString::number(levelTower));
+        showHp->setPos(x() + 15, y() + 10);
+        showHp->setFont(QFont("Times", 16));
+        showHp->setDefaultTextColor(Qt::black);
     }
 }
 
@@ -135,6 +143,14 @@ void grTower::mousePressEvent(QGraphicsSceneMouseEvent *event) {
             textItem->setPlainText(QString::number(coins));
             levelTower++;
         }
+
+        backHp = scene()->addPixmap(QPixmap("resources/images/starLvl.png"));
+        backHp->setPos(x(), y());
+
+        showHp = scene()->addText(QString::number(levelTower));
+        showHp->setPos(x() + 15, y() + 10);
+        showHp->setFont(QFont("Times", 16));
+        showHp->setDefaultTextColor(Qt::black);
     }
 }
 
@@ -170,6 +186,14 @@ void guardTower::mousePressEvent(QGraphicsSceneMouseEvent *event) {
             textItem->setPlainText(QString::number(coins));
             levelTower++;
         }
+
+        backHp = scene()->addPixmap(QPixmap("resources/images/starLvl.png"));
+        backHp->setPos(x(), y());
+
+        showHp = scene()->addText(QString::number(levelTower));
+        showHp->setPos(x() + 15, y() + 10);
+        showHp->setFont(QFont("Times", 16));
+        showHp->setDefaultTextColor(Qt::black);
     }
 }
 
@@ -205,5 +229,13 @@ void arcaneTower::mousePressEvent(QGraphicsSceneMouseEvent *event) {
             textItem->setPlainText(QString::number(coins));
             levelTower++;
         }
+
+        backHp = scene()->addPixmap(QPixmap("resources/images/starLvl.png"));
+        backHp->setPos(x(), y());
+
+        showHp = scene()->addText(QString::number(levelTower));
+        showHp->setPos(x() + 15, y() + 10);
+        showHp->setFont(QFont("Times", 16));
+        showHp->setDefaultTextColor(Qt::black);
     }
 }

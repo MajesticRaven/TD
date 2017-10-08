@@ -209,10 +209,13 @@ void MainMenu::on_backButton_clicked() //go to prev page
 }
 
 void MainMenu::BackToMenu() {
-    scene->deleteLater();
-    view->deleteLater();
-    ui->stackedWidget->setCurrentIndex(0);
-    QMessageBox::critical(this, "Lost", "You lose. Try again later");
+    if(isLose == false) {
+        scene->deleteLater();
+        view->deleteLater();
+        ui->stackedWidget->setCurrentIndex(0);
+        QMessageBox::critical(this, "Lost", "You lose. Try again later");
+        isLose = true;
+    }
 }
 
 void MainMenu::checkForWin(int lvl) {
@@ -228,6 +231,7 @@ void MainMenu::checkForWin(int lvl) {
         ui->stackedWidget->setCurrentIndex(0);
         WriteDB();
         QMessageBox::about(this, "Won", "You won! Next level is openned");
+        isLose = true;
     }
 }
 
@@ -340,6 +344,7 @@ void MainMenu::on_tenlevel_clicked() {
 }
 
 void MainMenu::firstlevel() {
+    isLose = false;
     view = new QGraphicsView(this);
     scene = new QGraphicsScene(this);
 
@@ -391,7 +396,7 @@ void MainMenu::firstlevel() {
     pit3->setPos(370, 200);
     scene->addItem(pit3);
 
-    for(int i = 0; i < 5; i++ ) {
+    for(int i = 0; i < 0; i++ ) {
         delay(2000);
         Arthas* unit1 = new Arthas(1);
         unit1->setPos(0, 150);
@@ -416,6 +421,7 @@ void MainMenu::firstlevel() {
 }
 
 void MainMenu::secondlevel() {
+    isLose = false;
     view = new QGraphicsView(this);
     scene = new QGraphicsScene(this);
 
@@ -456,7 +462,7 @@ void MainMenu::secondlevel() {
     points.push_back(QPointF(120, 220));
     points.push_back(QPointF(600, 220));
     points.push_back(QPointF(600, 420));
-    points.push_back(QPointF(1100, 420));
+    points.push_back(QPointF(1300, 420));
 
     pit* pit1 = new pit();
     pit1->setPos(140, 280);
@@ -509,6 +515,7 @@ void MainMenu::secondlevel() {
 }
 
 void MainMenu::thirdlevel() {
+    isLose = false;
     view = new QGraphicsView(this);
     scene = new QGraphicsScene(this);
 
@@ -601,6 +608,7 @@ void MainMenu::thirdlevel() {
 }
 
 void MainMenu::fourthlevel() {
+    isLose = false;
     view = new QGraphicsView(this);
     scene = new QGraphicsScene(this);
 
@@ -696,6 +704,7 @@ void MainMenu::fourthlevel() {
 }
 
 void MainMenu::fifthlevel() {
+    isLose = false;
     view = new QGraphicsView(this);
     scene = new QGraphicsScene(this);
 
@@ -781,6 +790,7 @@ void MainMenu::fifthlevel() {
 }
 
 void MainMenu::sixlevel() {
+    isLose = false;
     view = new QGraphicsView(this);
     scene = new QGraphicsScene(this);
 
@@ -868,6 +878,7 @@ void MainMenu::sixlevel() {
 }
 
 void MainMenu::sevenlevel() {
+    isLose = false;
     view = new QGraphicsView(this);
     scene = new QGraphicsScene(this);
 
@@ -957,6 +968,7 @@ void MainMenu::sevenlevel() {
 }
 
 void MainMenu::eightlevel() {
+    isLose = false;
     view = new QGraphicsView(this);
     scene = new QGraphicsScene(this);
 
@@ -1051,6 +1063,7 @@ void MainMenu::eightlevel() {
 }
 
 void MainMenu::ninelevel() {
+    isLose = false;
     view = new QGraphicsView(this);
     scene = new QGraphicsScene(this);
 
@@ -1146,6 +1159,7 @@ void MainMenu::ninelevel() {
 }
 
 void MainMenu::tenlevel() {
+    isLose = false;
     view = new QGraphicsView(this);
     scene = new QGraphicsScene(this);
 

@@ -64,5 +64,6 @@ extern QGraphicsTextItem *textItem;
 extern QGraphicsPixmapItem *pixmapItem;
 extern QGraphicsTextItem *texthp;
 extern QGraphicsPixmapItem *pixmaphp;
+extern bool isLose;
 
 #endif // LIBS_H

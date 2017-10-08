@@ -18,3 +18,4 @@ QGraphicsTextItem *textItem;
 QGraphicsPixmapItem *pixmapItem;
 QGraphicsTextItem *texthp;
 QGraphicsPixmapItem *pixmaphp;
+bool isLose = false;

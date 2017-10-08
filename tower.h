@@ -12,6 +12,9 @@ public:
     QGraphicsItem* target;
     QPointF closestPt;
     int damage;
+    QGraphicsPixmapItem *backHp;
+    QGraphicsTextItem *showHp;
+    int levelTower = 1;
 };
 
 class tower: public QObject, public QGraphicsPixmapItem, public towerBase {
@@ -21,7 +24,6 @@ public:
     tower();
     double distanceTo(QGraphicsItem* items);
     void attackTarget();
-    int levelTower = 1;
 
 public slots:
     void tracking();
